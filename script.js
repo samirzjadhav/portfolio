@@ -13,13 +13,16 @@ showMenu("nav-toggle", "nav-menu");
 
 // Remove Menu Mobile
 const navLink = document.querySelectorAll(".nav_link");
+
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  navMenu.classList.Remove(show);
+  navMenu.classList.remove("show");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
+/*===== SCROLL SECTIONS ACTIVE LINK =====*/
 const sections = document.querySelectorAll("section[id]");
+
 window.addEventListener("scroll", scrollActive);
 
 function scrollActive() {
@@ -31,13 +34,13 @@ function scrollActive() {
     sectionId = current.getAttribute("id");
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelectorAll(
-        ".nav_menu a[href*=" + sectionId + "]".classList.add("active")
-      );
+      document
+        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .classList.add("active");
     } else {
-      document.querySelectorAll(
-        ".nav_menu a[href*=" + sectionId + "]".classList.remove("active")
-      );
+      document
+        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .classList.remove("active");
     }
   });
 }
