@@ -171,6 +171,46 @@ img {
   background-color: var(--first-color);
 }
 
+/* Home */
+.home {
+  position: relative;
+  background-color: var(--first-color);
+  overflow: hidden;
+}
+
+.home_container {
+  height: calc(100vh - var(--header-height));
+  row-gap: 5rem;
+}
+
+.home_title {
+  align-self: flex-end;
+  font-size: var(--big-font-size);
+  color: var(--white-color);
+  line-height: 0.8;
+}
+
+.home_title span {
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+
+.home_scroll {
+  align-self: flex-end;
+  padding-bottom: var(--mb-4);
+}
+
+.home_scroll-link {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+}
+
+.home_img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 295px;
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .nav-menu {
