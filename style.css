@@ -202,6 +202,7 @@ img {
 .home_scroll-link {
   writing-mode: vertical-lr;
   transform: rotate(-180deg);
+  color: var(--white-color);
 }
 
 .home_img {
@@ -255,6 +256,35 @@ img {
 
 .about_social-icon:hover {
   color: var(--first-color);
+}
+
+/* Skill */
+.skills_container {
+  row-gap: 2rem;
+}
+
+.skills_subtitle {
+  color: var(--first-color);
+  margin-bottom: var(--mb-3);
+}
+
+.skills_name {
+  display: inline-block;
+  font-size: var(--small-font-size);
+  margin-right: var(--mb-2);
+  margin-bottom: var(--mb-3);
+  padding: 0.25rem 0.5rem;
+  background-color: var(--white-color);
+  border-radius: 0.25rem;
+}
+
+.skills_name:hover {
+  background-color: var(--first-color);
+  color: var(--white-color);
+}
+
+.skills_img img {
+  border-radius: 0.5rem;
 }
 
 /* Media Queries */
