@@ -211,6 +211,52 @@ img {
   width: 295px;
 }
 
+/* About Section */
+.about_container {
+  justify-content: center;
+  row-gap: 2rem;
+  text-align: center;
+}
+
+.about_img {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  width: 120px;
+  height: 120px;
+  background-color: var(--first-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.about_img img {
+  width: 100%;
+}
+
+.about-subtitle {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: var(--mb-1);
+}
+
+.about_text {
+  margin-bottom: var(--mb-4);
+}
+
+.about_profession {
+  display: block;
+  margin-bottom: var(--mb-4);
+}
+
+.about_social-icon {
+  font-size: 1.4rem;
+  margin: 0 var(--mb-1);
+}
+
+.about_social-icon:hover {
+  color: var(--first-color);
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .nav-menu {
