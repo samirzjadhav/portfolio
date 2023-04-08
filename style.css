@@ -338,6 +338,11 @@ img {
   height: 55px;
 }
 
+.skills-new {
+  display: flex;
+  margin-top: 1rem;
+}
+
 /* Portfolio */
 /* .portfolio {
   background-color: var(--white-color);
