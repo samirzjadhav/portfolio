@@ -51,9 +51,11 @@
 ::after {
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
@@ -62,30 +64,39 @@ body {
   color: var(--text-color);
   line-height: 1.6;
 }
+
 h1,
 h2,
 p {
   margin: 0;
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: var(--text-color);
 }
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+.purple {
+  color: #c770c7;
+}
+
 /* LASS CSS */
 .section {
   padding: 3rem 0;
 }
+
 .section-title {
   position: relative;
   font-size: var(--h2-font-size);
@@ -93,6 +104,7 @@ img {
   margin: var(--mb-4) 0;
   text-align: center;
 }
+
 .section-title::after {
   position: absolute;
   content: "";
@@ -104,6 +116,7 @@ img {
   top: 2rem;
   background-color: var(--first-color);
 }
+
 /* Layout */
 .bd-grid {
   max-width: 1024px;
@@ -285,6 +298,53 @@ img {
 
 .skills_img img {
   border-radius: 0.5rem;
+}
+
+/* Portfolio */
+.portfolio {
+  background-color: var(--white-color);
+}
+
+.portfolio_container {
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.portfolio_img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio_img img {
+  border-radius: 0.5rem;
+  border: 3px solid #c770c7;
+}
+
+.portfolio_img:hover .portfolio_link {
+  bottom: 0;
+}
+
+.portfolio_link-name {
+  font-size: 1.2rem;
+  padding: 0.8rem 1.2rem;
+  color: var(--white-color);
+  background-color: var(--first-color);
+  border-radius: 0.5rem;
+}
+
+.portfolio_link {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  backdrop-filter: blur(15px);
+  transition: 0.3s;
 }
 
 /* Media Queries */
