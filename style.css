@@ -389,6 +389,32 @@ img {
   cursor: pointer;
 }
 
+/* Footer section */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer_container {
+  row-gap: 2rem;
+}
+.footer_title {
+  font-size: var(--normal-font-size);
+  color: var(--white-color);
+  margin-bottom: var(--mb-2);
+}
+.footer_link {
+  padding: 0.25rem 0;
+}
+.footer_link:hover {
+  color: var(--first-color);
+}
+.footer_social {
+  font-size: 1.4rem;
+  margin-right: var(--mb-1);
+}
+.footer_social:hover {
+  color: var(--first-color);
+}
+
 /* Media Queries */
 @media screen and (max-width: 768px) {
   .nav-menu {
