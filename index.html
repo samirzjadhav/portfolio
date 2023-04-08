@@ -18,6 +18,12 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -45,7 +51,7 @@
             </li>
           </ul>
         </div>
-        <div class="nav_toggle" id="nav_toggle">
+        <div class="nav_toggle" id="nav-toggle">
           <i class="bx bx-menu"></i>
         </div>
       </nav>
@@ -55,11 +61,13 @@
       <!-- Home  section-->
       <section class="home" id="home">
         <div class="home_container bd-grid">
-          <h1 class="home_title"><span>He</span><br />LLO.</h1>
-
+          <h1 class="home_title"><span>He </span> <br />LLO.</h1>
+          <h1 class="home_subtitle">
+            I'M <strong class="purple">SAMIR JADHAV</strong>
+          </h1>
           <div class="home_scroll">
             <a href="#about" class="home_scroll-link">
-              <i class="bx bx-down-arrow-alt"></i>
+              <i class="bx bx-up-arrow-alt"></i>
               Scroll down
             </a>
           </div>
@@ -78,7 +86,9 @@
           </div>
 
           <div>
-            <h2 class="about_subtitle">I'm Samir Jadhav</h2>
+            <h2 class="about_subtitle">
+              I'm <span class="purple"> Samir Jadhav </span>
+            </h2>
             <span class="about_profession">Web developer</span>
             <p class="about_text">
               <span class="purple"> 18 • 💜 all things web • </span><br />
@@ -108,26 +118,89 @@
             <h3 class="skills_subtitle">
               Development <span class="purple">Skills</span>
             </h3>
-            <span class="skills_name">Html</span>
-            <span class="skills_name">Css</span>
-            <span class="skills_name">Javascript</span>
-            <span class="skills_name">Scss</span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <i class="bx bxl-html5"></i>
+                <a href="#">Html5</a>
+              </div>
+            </span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <i class="bx bxl-css3"></i>
+                <a href="#">Css3</a>
+              </div>
+            </span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <i class="bx bxl-javascript"></i>
+                <a href="#">Javascript</a>
+              </div>
+            </span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <i class="bx bxl-sass"></i>
+                <a href="#">Scss</a>
+              </div>
+            </span>
 
             <h3 class="skills_subtitle">
               <span class="purple">Tools</span> I use
             </h3>
-            <span class="skills_name">Vs Code </span>
-            <span class="skills_name">Git</span>
-            <span class="skills_name">Vercel</span>
-            <span class="skills_name">Npm</span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title></title>
+                  <path
+                    d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"
+                  ></path>
+                </svg>
+                <a href="#">Vs Code</a>
+              </div>
+            </span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <i class="bx bxl-git"></i>
+                <a href="#"> Git</a>
+              </div>
+            </span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill-rule="evenodd" d="M256 48l240 416H16z"></path>
+                </svg>
+                <a href="#">Vercel</a>
+              </div>
+            </span>
+            <span class="skills_name">
+              <div class="skill-content">
+                <i class="bx bxl-github"></i>
+                <a href="#"> Github</a>
+              </div>
+            </span>
 
             <h3 class="skills_subtitle">
               Days I <span class="purple">Code</span>
             </h3>
-
-            <div class="skill_img">
-              <img src="./assets/skill.jpg" alt="" />
-            </div>
+          </div>
+          <div class="skill_img">
+            <img src="./assets/about.png" alt="" />
           </div>
         </div>
       </section>
@@ -274,7 +347,7 @@
               rows="10"
               class="contact_input"
             ></textarea>
-            <input type="submit" value="Enviar" class="contact_button" />
+            <input type="submit" value="Submit" class="contact_button" />
           </form>
         </div>
       </section>
@@ -282,6 +355,7 @@
 
     <!-- Footer section -->
     <footer class="footer section">
+      <h2 class="section-title">Footer</h2>
       <div class="footer_container bd-grid">
         <div class="footer_data">
           <h2 class="footer_title">Samir Jadhav</h2>
@@ -303,17 +377,35 @@
 
         <div class="footer_data">
           <h2 class="footer_title">FOLLOW</h2>
-          <a href="#" class="footer_social"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="footer_social"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="footer_social"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="footer_social"><i class="bx bxl-github"></i></a>
-          <a href="#" class="footer_social"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.facebook.com/samirzjadhav" class="footer_social">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/samirjadhaw/"
+            class="footer_social"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="https://twitter.com/samirzjadhav" class="footer_social">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://github.com/samirzjadhav" class="footer_social">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/samirzjadhav/"
+            class="footer_social"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
         </div>
       </div>
     </footer>
 
     <!-- links scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ionicosn js -->
+    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
     <!-- links script.js -->
     <script src="./script.js"></script>
   </body>
