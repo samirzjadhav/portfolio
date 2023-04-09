@@ -12,7 +12,7 @@ const showMenu = (toggleId, navId) => {
 showMenu("nav-toggle", "nav-menu");
 
 // Remove Menu Mobile
-const navLink = document.querySelectorAll(".nav_link");
+const navLink = document.querySelectorAll(".nav-link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
@@ -35,11 +35,11 @@ function scrollActive() {
 
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .querySelector(".nav-menu a[href*=" + sectionId + "]")
         .classList.add("active");
     } else {
       document
-        .querySelector(".nav_menu a[href*=" + sectionId + "]")
+        .querySelector(".nav-menu a[href*=" + sectionId + "]")
         .classList.remove("active");
     }
   });
@@ -55,37 +55,37 @@ const sr = ScrollReveal({
 const defaultScrollRevealDelay = 50;
 
 /*SCROLL HOME*/
-sr.reveal(".home_title", {});
-sr.reveal(".home_scroll", { delay: defaultScrollRevealDelay });
-sr.reveal(".home_img", { origin: "right", delay: defaultScrollRevealDelay });
+sr.reveal(".home-title", {});
+sr.reveal(".home-scroll", { delay: defaultScrollRevealDelay });
+sr.reveal(".home-img", { origin: "right", delay: defaultScrollRevealDelay });
 
 /*SCROLL ABOUT*/
-sr.reveal(".about_img", { delay: defaultScrollRevealDelay });
-sr.reveal(".about_subtitle", { delay: defaultScrollRevealDelay });
-sr.reveal(".about_profession", { delay: defaultScrollRevealDelay });
-sr.reveal(".about_text", { delay: defaultScrollRevealDelay });
-sr.reveal(".about_social-icon", {
+sr.reveal(".about-img", { delay: defaultScrollRevealDelay });
+sr.reveal(".about-subtitle", { delay: defaultScrollRevealDelay });
+sr.reveal(".about-profession", { delay: defaultScrollRevealDelay });
+sr.reveal(".about-text", { delay: defaultScrollRevealDelay });
+sr.reveal(".about-social-icon", {
   delay: defaultScrollRevealDelay,
   interval: 200,
 });
 
 /*SCROLL SKILLS*/
-sr.reveal(".skills_subtitle", {});
-sr.reveal(".skills_name", {
+sr.reveal(".skills-subtitle", {});
+sr.reveal(".skills-name", {
   distance: "20px",
   delay: defaultScrollRevealDelay,
   interval: 100,
 });
-sr.reveal(".skills_img", { delay: defaultScrollRevealDelay });
+sr.reveal(".skills-img", { delay: defaultScrollRevealDelay });
 
 /*SCROLL PORTFOLIO*/
-sr.reveal(".portfolio_img", { interval: 50 });
+sr.reveal(".portfolio-img", { interval: 50 });
 
 /*SCROLL CONTACT*/
-sr.reveal(".contact_subtitle", {});
-sr.reveal(".contact_text", { interval: 50 });
-sr.reveal(".contact_input", { delay: defaultScrollRevealDelay });
-sr.reveal(".contact_button", { delay: defaultScrollRevealDelay });
+sr.reveal(".contact-subtitle", {});
+sr.reveal(".contact-text", { interval: 50 });
+sr.reveal(".contact-input", { delay: defaultScrollRevealDelay });
+sr.reveal(".contact-button", { delay: defaultScrollRevealDelay });
 
 // loader
 function loader() {
