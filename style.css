@@ -233,10 +233,11 @@ img {
   color: var(--white-color);
   font-size: 1.8rem;
   margin-left: 0.8rem;
+  margin-top: 16px;
 }
 
-.home_title span {
-  text-shadow: 0 20px 25px rgba(0, 0, 0, 1);
+.home_title {
+  text-shadow: 0 20px 25px rgba(0, 0, 0, 0.4);
 }
 
 .home_scroll {
@@ -259,32 +260,24 @@ img {
 .about_container {
   justify-items: center;
   row-gap: 2rem;
-  text-align: center;
+  padding: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .about_img {
-  /* display: flex;
-  justify-content: center;
-  padding-top: 1rem;
-  width: 120px;
-  height: 120px;
-  background-color: var(--first-color);
-  border-radius: 50%; */
   overflow: hidden;
-}
-
-.about_img img {
-  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .about-subtitle {
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-bottom: var(--mb-1);
-}
-
-.about_text {
-  margin-bottom: var(--mb-4);
 }
 
 .about_profession {
@@ -444,12 +437,13 @@ img {
   outline: none;
   font-size: var(--normal-font-size);
   cursor: pointer;
+  margin-top: 12px;
 }
 
 /* Footer section */
-/* .footer {
-  background-color: var(--dark-color);
-} */
+.footer {
+  height: 60vh;
+}
 
 .footer_container {
   row-gap: 2rem;
@@ -522,17 +516,11 @@ img {
     margin-left: 0.6rem;
   }
 
-  .about_img img {
-    width: 100%;
-    padding: 10px;
-  }
-
   .skills_box {
     text-align: center;
   }
 
   .home_container {
-    height: 100vh;
     row-gap: 4rem;
   }
 
@@ -613,7 +601,6 @@ img {
   }
 
   .home_container {
-    height: 100vh;
     grid-template-columns: 1.2fr 1fr;
     row-gap: 0;
     margin-top: 100px;
@@ -632,15 +619,6 @@ img {
     text-align: initial;
     padding: 4rem 0;
   }
-
-  .about_img img {
-    width: 80%;
-    height: 100%;
-  }
-
-  /* .about_img img {
-    width: 165px;
-  } */
 
   .skills_container {
     grid-template-columns: repeat(2, 1fr);
@@ -676,16 +654,11 @@ img {
 
 /* For tall screens on mobiles y desktop*/
 @media screen and (max-height: 721px) {
-  .home_container {
-    height: 640px;
-  }
-
   .home_img {
     width: 500px;
   }
 
   .home_container {
-    height: 100vh;
     row-gap: 1rem;
   }
 
