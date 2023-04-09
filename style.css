@@ -420,7 +420,7 @@ img {
   width: 100%;
   padding: 0.8rem;
   outline: none;
-  border: 1.5px solid var(--dark-color);
+  border: 1.5px solid #c770c7;
   border-radius: 0.5rem;
   color: #fff;
   margin-top: 1rem;
