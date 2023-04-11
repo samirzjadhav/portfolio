@@ -212,6 +212,7 @@ img {
   background-color: var(--first-color);
   overflow: hidden;
   background-image: url(./assets/home-bg.jpg);
+  background-size: cover;
 }
 
 .home-container {
