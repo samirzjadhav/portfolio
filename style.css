@@ -361,6 +361,7 @@ img {
 .portfolio-img {
   position: relative;
   overflow: hidden;
+  height: 80%;
 }
 
 .portfolio-img img {
