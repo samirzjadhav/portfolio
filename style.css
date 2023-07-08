@@ -366,6 +366,8 @@ img {
 .portfolio-img img {
   border-radius: 0.5rem;
   border: 3px solid #c770c7;
+  width: 100%;
+  height: 100%;
 }
 
 .portfolio-img:hover .portfolio-link {
