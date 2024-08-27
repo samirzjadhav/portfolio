@@ -330,6 +330,12 @@ img {
   align-items: center;
 }
 
+.skill-content i,
+.skill-content img {
+  width: 58px;
+  height: 58px;
+}
+
 .skills-box a {
   color: var(--white-color);
 }
@@ -346,6 +352,13 @@ img {
 .skills-new {
   display: flex;
   margin-top: 1rem;
+}
+
+.skill-info,
+.tool-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Portfolio */
